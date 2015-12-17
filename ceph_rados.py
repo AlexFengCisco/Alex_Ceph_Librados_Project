@@ -22,6 +22,7 @@ pools = cluster.list_pools()
 for pool in pools:
 	print pool
 
+#cluster.create_pool('alexdata')
 ioctx = cluster.open_ioctx('alexdata')
 
 ioctx.write_full("alex_object", "Hello World!")
